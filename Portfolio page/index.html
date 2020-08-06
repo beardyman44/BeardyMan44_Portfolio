@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BeardyMan44 Portfolio</title>
+    <style>
+
+        .main {
+            background: rgb(128, 248, 128);
+        }
+
+        .welcome-section {
+            height: 100vh;
+            width: 100%;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            background: rgb(128, 248, 128);
+        }
+
+        .welcome-section p{
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 30px;
+        }
+
+        #navbar {
+            display: flex;
+            font-size: 20px;
+            position: fixed;
+            top: 0; 
+            left: 0;
+            width: 100%;
+            z-index: 99998;
+            background: rgba(42, 134, 42, 0.842);
+        }
+
+        li {
+            list-style: none;
+            display: inline-block;
+            line-height: 100px;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            padding: 5px 20px;
+            color: white;
+        }
+
+        a:hover {
+            background: darkgreen;
+        }
+
+        h1 {
+            position: relative;
+            padding: 20;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 60px;
+        }
+
+        h3 {
+            color: white;
+        }
+
+        .contacts {
+            font-size: 25px;
+            background:rgba(42, 134, 42, 0.842);
+        }
+
+        .links {
+            font-size: 25px;
+        }
+
+        .projects {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .row {
+            margin: 8px -16px;
+        }
+
+        .row,
+        .row > .column {
+            padding: 12px;
+        }
+
+        .column {
+            float: left;
+            width: 25%;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .content {
+            display: flex;
+            background-color: rgba(42, 134, 42, 0.842);
+            padding: 15px;
+        }
+
+        @media screen and (max-width: 900px) {
+        .column {
+            width: 50%;
+        }
+        }
+
+        @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+        }
+        }
+
+
+    </style>
+</head>
+<body class="main">
+    <div id="navbar">
+        <nav id="navbar">
+            <ul>
+                <li><a href="#about"> About</a></li>
+                <li><a href="#projects"> Projects</a></li>
+                <li><a href="#contacts"> Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="welcome-section" class="welcome-section">
+        <section id="welcome-section">
+            <h1 id="about">Welcome to BeardyMan44's Portfolio</h1>
+            <p>Web Designer</p>
+        </section>
+    </div>
+    <section id="projects" class="projects">
+        <div class="row">
+            <div class="column">
+                <div class="content">
+                    <a href="https://github.com/beardyman44/Evil-Dead-fanpage" class="project-tile">
+                        <img src="images/Evil-Dead-Fanpage.png" alt="Evil-Dead-Fanpage" style="width:100%">
+                        <h3>Evil Dead Fanpage</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <a href="https://github.com/beardyman44/filmmaking" class="project-tile">
+                        <img src="images/Filmmaking.png" alt="Filmmaking-Document" style="width:100%">
+                        <h3>Filmmaking </h3>
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <a href="https://github.com/beardyman44/filmmaking" class="project-tile">
+                        <img src="images/Spyderco-Knives.png" alt="Knife-Landing-Page" style="width:100%">
+                        <h3>Knife Landing Page</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <a href="https://github.com/beardyman44/movie-survey" class="project-tile">
+                        <img src="images/Movie-Survey.png" alt="Movie-Survey" style="width:100%">
+                        <h3>Movie Survey</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+    </section>
+        <div class="contacts">
+            <section id="contacts">
+                <ul>
+                    <li><a href="mailto:beardyman44@gmail.com" target="_blank">Email</a></li>
+                    <li><a href="https://github.com/beardyman44" target="_blank" id="profile-link"> Full Portfolio</a></li>
+                </ul>
+            </section>
+        </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
